@@ -1,0 +1,544 @@
+
+2025/05/20 22:52:22 [35m/Users/xiajia/Desktop/TikTok-XiaJia/douyin-api/global/global.go:42
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 43.143.80.216:3306: connect: operation timed out
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+2025-05-20T22:52:22.992+0800	INFO	router/favorite.go:12	配置点赞相关的url
+[GIN-debug] POST   /douyin/favorite/action/  --> demotest/douyin-api/api.FavoriteAction (4 handlers)
+[GIN-debug] GET    /douyin/favorite/list/    --> demotest/douyin-api/api.FavoriteList (4 handlers)
+2025-05-20T22:52:22.993+0800	INFO	router/comment.go:12	配置评论相关的url
+[GIN-debug] POST   /douyin/comment/action/   --> demotest/douyin-api/api.CommentAction (4 handlers)
+[GIN-debug] GET    /douyin/comment/list/     --> demotest/douyin-api/api.CommentList (3 handlers)
+2025-05-20T22:52:22.993+0800	INFO	router/user.go:21	配置用户相关的url
+[GIN-debug] GET    /douyin/user/             --> demotest/douyin-api/api.GetUserDetail (3 handlers)
+[GIN-debug] POST   /douyin/user/register/    --> demotest/douyin-api/api.UserRegister (4 handlers)
+[GIN-debug] POST   /douyin/user/login/       --> demotest/douyin-api/api.UserLogin (3 handlers)
+[GIN-debug] POST   /douyin/publish/action/   --> demotest/douyin-api/api.VideoPublish (4 handlers)
+[GIN-debug] GET    /douyin/feed/             --> demotest/douyin-api/api.VideoStream (3 handlers)
+[GIN-debug] GET    /douyin/publish/list/     --> demotest/douyin-api/api.VideoList (3 handlers)
+[GIN-debug] POST   /douyin/relation/action/  --> demotest/douyin-api/api.UserRelationAction (3 handlers)
+[GIN-debug] GET    /douyin/relation/follow/list/ --> demotest/douyin-api/api.UserRelationFollowList (3 handlers)
+[GIN-debug] GET    /douyin/relation/follower/list/ --> demotest/douyin-api/api.UserRelationFollowerList (3 handlers)
+[GIN-debug] GET    /douyin/relation/friend/list/ --> demotest/douyin-api/api.UserRelationFriendList (3 handlers)
+[GIN-debug] POST   /douyin/message/action/   --> demotest/douyin-api/api.UserMessageAction (4 handlers)
+[GIN-debug] GET    /douyin/message/chat/     --> demotest/douyin-api/api.UserMessageChat (3 handlers)
+2025-05-20T22:52:22.994+0800	INFO	util/redisUtil.go:62	Redis初始化成功，定时任务开始执行
+2025-05-20T22:52:23.020+0800	INFO	util/wordFilter.go:171	无法加载敏感词文件:open /home/runner/app/pub_sms_banned_words.txt: no such file or directory
+2025-05-20T22:52:23.020+0800	INFO	cmd/main.go:34	启动服务器,端口: 8080
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+2025-05-20T22:52:23.020+0800	INFO	cmd/main.go:15	启动 pprof 服务
+[GIN-debug] [ERROR] listen tcp :8080: bind: address already in use
+2025-05-20TError getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:52:30.582+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:52:30.582+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:52:40.584+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:52:40.584+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:52:50.588+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:52:50.588+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:53:00.590+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:53:00.590+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:53:10.599+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:53:10.599+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:53:20.604+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:53:20.607+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:53:30.609+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:53:30.609+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:53:40.613+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:53:40.613+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:53:50.616+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:53:50.616+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:54:00.619+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:54:00.619+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:54:10.622+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:54:10.623+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:54:20.626+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:54:20.627+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:54:30.631+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:54:30.631+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:54:40.637+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:54:40.638+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:54:50.642+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:54:50.642+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:55:00.646+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:55:00.647+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:55:10.650+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:55:10.650+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:55:20.655+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:55:20.655+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:55:30.658+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:55:30.658+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:55:40.662+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:55:40.662+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:55:50.666+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:55:50.666+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:56:00.670+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:56:00.670+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:56:10.674+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:56:10.674+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:56:20.678+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:56:20.678+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:56:30.682+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:56:30.682+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:56:40.686+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:56:40.687+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:56:50.690+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:56:50.690+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:57:00.695+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:57:00.695+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:57:10.698+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:57:10.699+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:57:20.703+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:57:20.703+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:57:30.707+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:57:30.708+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:57:40.712+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:57:40.712+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:57:50.715+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:57:50.715+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:58:00.719+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:58:00.719+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:58:10.724+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:58:10.724+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:58:20.727+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:58:20.728+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:58:30.732+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:58:30.732+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:58:40.736+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:58:40.736+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:58:50.739+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:58:50.739+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:59:00.742+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:59:00.743+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:59:00.743+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:59:05.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:59:05.580+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:59:10.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:59:10.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:59:15.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:59:15.580+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:59:20.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:59:20.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:59:25.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:59:25.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:59:30.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:59:30.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:59:35.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:59:35.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:59:40.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:59:40.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:59:45.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:59:45.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:59:50.577+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:59:50.578+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T22:59:55.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T22:59:55.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:00:00.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:00:00.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:00:05.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:00:05.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:00:10.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:00:10.578+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:00:15.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:00:15.578+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:00:20.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:00:20.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:00:25.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:00:25.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:00:30.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:00:30.578+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:00:35.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:00:35.581+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:00:40.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:00:40.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:00:45.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:00:45.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:00:50.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:00:50.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:00:55.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:00:55.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:01:00.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:01:00.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:01:05.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:01:05.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:01:10.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:01:10.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:01:15.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:01:15.578+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:01:20.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:01:20.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:01:25.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:01:25.580+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:01:30.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:01:30.578+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:01:35.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:01:35.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:01:40.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:01:40.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:01:45.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:01:45.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:01:50.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:01:50.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:01:55.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:01:55.578+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:02:00.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:02:00.578+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:02:05.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:02:05.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:02:10.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:02:10.578+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:02:15.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:02:15.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:02:20.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:02:20.580+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:02:25.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:02:25.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:02:30.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:02:30.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:02:35.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:02:35.578+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:02:40.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:02:40.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:02:45.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:02:45.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:02:50.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:02:50.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:02:55.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:02:55.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:03:00.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:03:00.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:03:05.579+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:03:05.581+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:03:10.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:03:10.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:03:15.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:03:15.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:03:20.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:03:20.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:03:25.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:03:25.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:03:30.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:03:30.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:03:35.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:03:35.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:03:40.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:03:40.578+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:03:45.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:03:45.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:03:50.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:03:50.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:03:55.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:03:55.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:04:00.579+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:04:00.580+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:04:05.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:04:05.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:04:10.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:04:10.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:04:15.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:04:15.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:04:20.577+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:04:20.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:04:25.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:04:25.580+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:04:30.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:04:30.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:04:35.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:04:35.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:04:40.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:04:40.578+0800	INFO	util/redisUtil.go:72	写入完成
+[GIN] 2025/05/20 - 23:04:45 | 404 |         334ns |       127.0.0.1 | GET      "/dou yin"
+2025-05-20T23:04:45.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:04:45.581+0800	INFO	util/redisUtil.go:72	写入完成
+[GIN-debug] redirecting request 301: /douyin/user/ --> /douyin/user/
+2025-05-20T23:04:48.198+0800	INFO	api/user.go:17	开始进入GetUserDetail方法
+2025-05-20T23:04:50.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:04:50.579+0800	INFO	util/redisUtil.go:72	写入完成
+[GIN] 2025/05/20 - 23:04:53 | 200 |  5.038990292s |       127.0.0.1 | GET      "/douyin/user/"
+2025-05-20T23:04:55.579+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:04:55.583+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:05:00.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:05:00.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:05:05.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:05:05.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:05:10.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:05:10.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:05:15.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:05:15.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:05:20.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:05:20.580+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:05:25.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:05:25.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:05:30.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:05:30.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:05:35.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:05:35.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:05:40.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:05:40.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:05:45.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:05:45.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:05:50.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:05:50.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:05:55.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:05:55.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:06:00.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:06:00.579+0800	INFO	util/redisUtil.go:72	写入完成
+2025-05-20T23:06:05.578+0800	INFO	util/redisUtil.go:69	redis开始写入mysql
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+Error getting keys from Redis: dial tcp 43.143.44.118:9898: i/o timeout
+2025-05-20T23:06:05.578+0800	INFO	util/redisUtil.go:72	写入完成
+signal: killed

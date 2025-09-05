@@ -1,0 +1,11 @@
+
+2025/05/20 22:52:22 [35m/Users/xiajia/Desktop/TikTok-XiaJia/base-service/global/global.go:37
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 43.143.80.216:3306: connect: operation timed out
+ip: 127.0.0.1  port: 8887  Service is running
+signal: killed
+ liston listen tcp 127.0.0.1:8887: bind: address already in use
+
+goroutine 1 [running]:
+main.main()
+	/Users/xiajia/Desktop/TikTok-XiaJia/base-service/cmd/main.go:34 +0x3b0
+exit status 2

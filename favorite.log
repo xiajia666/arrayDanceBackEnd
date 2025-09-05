@@ -1,0 +1,13 @@
+
+2025/05/20 22:52:22 [35m/Users/xiajia/Desktop/TikTok-XiaJia/interaction-service/global/global.go:36
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 43.143.80.216:3306: connect: operation timed out
+2025-05-20T22:52:22.931+0800	INFO	global/loggerInit.go:18	日志服务启动
+
+2025/05/20 22:53:37 [35m/Users/xiajia/Desktop/TikTok-XiaJia/douyin-api/global/global.go:42
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 43.143.80.216:3306: connect: operation timed out
+panic: listen tcp 127.0.0.1:8881: bind: address already in use
+
+goroutine 1 [running]:
+main.main()
+	/Users/xiajia/Desktop/TikTok-XiaJia/interaction-service/server/favorite/favorite.go:20 +0x324
+exit status 2
