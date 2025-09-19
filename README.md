@@ -3,7 +3,7 @@
 - 本抖音项目是基于grpc通讯协议开发的高性能微服务，不仅使用gin作为业务层框架，gorm框架作为持久层框架，还使用预编译sql防止sql注入，同时该项目结合连接池技术来构建连接工厂和复用grpc连接来提高系统的性能，这样可以有效的处理高并发场景下的挑战，还可以通过减少频繁创建和销毁grpc连接带来的性能开销
 - 项目服务地址:https://1024code.com/codecubes/jpyi9rm 
 - 项目地址:https://github.com/fineCoderWithLove/douyin-base
-## 二、项目实现
+## 二、项目实现--123
  ###  2.1技术选型
 - gin:提供grpc服务使用protobuf进行数据传输。
 - JWT:token生成和权限的校验
