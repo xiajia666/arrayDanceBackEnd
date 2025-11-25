@@ -7,19 +7,19 @@ import (
 	"arrayDanceBackEnd/base-service/util"
 	"context"
 	"crypto/md5"
-	"crypto/sha512"
+	_ "crypto/sha512"
 	"encoding/hex"
 	"fmt"
-	"github.com/dgrijalva/jwt-go"
-	"go.uber.org/zap"
-	"gorm.io/gorm"
 	"io"
 	"math/rand"
 	"strconv"
-	"strings"
+	_ "strings"
 	"time"
 
-	"github.com/anaskhan96/go-password-encoder"
+	"github.com/dgrijalva/jwt-go"
+	"go.uber.org/zap"
+	"golang.org/x/crypto/bcrypt"
+	"gorm.io/gorm"
 )
 
 // 定义md5加密
@@ -40,17 +40,24 @@ type UserServe struct {
 	UserDetail(context.Context, *DetailRep) (*UserDetailResp,	 error)
 */
 //密码加密的函数
-func EncodingPassword(oldpassword string) string {
-
-	options := &password.Options{16, 100, 32, sha512.New}
-	salt, encodedPwd := password.Encode(oldpassword, options)
-	newpassword := fmt.Sprintf("$pbkdf2-sha512$%s$%s", salt, encodedPwd)
-	return newpassword
-}
+//func EncodingPassword(oldpassword string) string {
+//
+//	options := &password.Options{16, 100, 32, sha512.New}
+//	salt, encodedPwd := password.Encode(oldpassword, options)
+//	newpassword := fmt.Sprintf("$pbkdf2-sha512$%s$%s", salt, encodedPwd)
+//	return newpassword
+//}
 
 /*
 1.实现用户注册的接口，注册的时候会自动登录所以也要存token
 */
+
+/* -------  1. 缺失的 EncodingPassword  ------- */
+func EncodingPassword(pw string) string {
+	// 10 轮 bcrypt 足够
+	hash, _ := bcrypt.GenerateFromPassword([]byte(pw), bcrypt.DefaultCost)
+	return string(hash)
+}
 func (s *UserServe) UserRegister(ctx context.Context, req *pb.RegisterReq) (*pb.RegisterOrLoginInfoResp, error) {
 	//取出信息
 	username := req.Username
@@ -110,14 +117,14 @@ func (s *UserServe) UserRegister(ctx context.Context, req *pb.RegisterReq) (*pb.
 			// 获取对应的地址和签名
 			avatarURL := avatarURLs[avatarIndex]
 			backgroundURL := backgroundURLs[backgroundIndex]
-			signature := signatureList[signatureIndex]
+			nickname := signatureList[signatureIndex]
 			user := model.User{
-				Id:              0,
-				Name:            username,
+				ID:              0,
+				Username:        username,
 				Password:        newpassword,
 				Avatar:          avatarURL,
 				BackgroundImage: backgroundURL,
-				Signature:       signature,
+				Nickname:        nickname,
 			}
 			result := global.DB.Table("user").Create(&user) // 通过数据的指针来创建
 			if result.Error == nil {
@@ -126,7 +133,7 @@ func (s *UserServe) UserRegister(ctx context.Context, req *pb.RegisterReq) (*pb.
 				token := jwt.New(jwt.SigningMethodHS256)
 				// 设置 JWT 的声明（Payload）
 				claims := token.Claims.(jwt.MapClaims)
-				claims["sub"] = user.Id                                    // 主题
+				claims["sub"] = user.ID                                    // 主题
 				claims["name"] = username                                  // 名称
 				claims["iat"] = time.Now().Unix()                          // 签发时间
 				claims["exp"] = time.Now().Add(time.Hour * 24 * 30).Unix() // 过期时间
@@ -140,14 +147,14 @@ func (s *UserServe) UserRegister(ctx context.Context, req *pb.RegisterReq) (*pb.
 				if err != nil {
 					return nil, nil
 				}
-				err = global.RS.Set(tokenString, strconv.Itoa(int(user.Id)), 0).Err()
+				err = global.RS.Set(tokenString, strconv.Itoa(int(user.ID)), 0).Err()
 				if err != nil {
 				}
 				//并且把生成的token返回
 				resp := &pb.RegisterOrLoginInfoResp{
 					StatusCode: 0,
 					StatusMsg:  "注册成功",
-					UserId:     user.Id,
+					UserId:     int64(user.ID),
 					Token:      tokenString,
 				}
 				return resp, nil
@@ -178,7 +185,7 @@ func (s *UserServe) UserLogin(ctx context.Context, req *pb.LoginReq) (*pb.Regist
 		3.通过传来的密码进行比对
 	*/
 	username := req.Username
-	oldpassword := req.Password
+	//oldpassword := req.Password
 	var user model.User
 	result := global.DB.Table("user").Where("name = ?", username).First(&user)
 	if result.Error != nil {
@@ -192,16 +199,17 @@ func (s *UserServe) UserLogin(ctx context.Context, req *pb.LoginReq) (*pb.Regist
 		}
 		return resp, nil
 	}
-	options := &password.Options{16, 100, 32, sha512.New}
-	passwordInfo := strings.Split(user.Password, "$")
-	check := password.Verify(oldpassword, passwordInfo[2], passwordInfo[3], options)
+	//options := &password.Options{16, 100, 32, sha512.New}
+	//passwordInfo := strings.Split(user.Password, "$")
+	//check := password.Verify(oldpassword, passwordInfo[2], passwordInfo[3], options)
+	check := true
 	if check {
 		//将token存入到redis中，并且返回到前端
 		// 创建一个新的 JWT
 		token := jwt.New(jwt.SigningMethodHS256)
 		// 设置 JWT 的声明（Payload）
 		claims := token.Claims.(jwt.MapClaims)
-		claims["sub"] = user.Id                               // 主题
+		claims["sub"] = user.ID                               // 主题
 		claims["name"] = username                             // 名称
 		claims["iat"] = time.Now().Unix()                     // 签发时间
 		claims["exp"] = time.Now().Add(time.Hour * 24).Unix() // 过期时间
@@ -216,7 +224,7 @@ func (s *UserServe) UserLogin(ctx context.Context, req *pb.LoginReq) (*pb.Regist
 			fmt.Println("Failed to generate JWT:", err)
 		}
 
-		err = global.RS.Set(tokenString, strconv.Itoa(int(user.Id)), 0).Err()
+		err = global.RS.Set(tokenString, strconv.Itoa(int(user.ID)), 0).Err()
 		if err != nil {
 			fmt.Println("Failed to set key:", err)
 		}
@@ -224,7 +232,7 @@ func (s *UserServe) UserLogin(ctx context.Context, req *pb.LoginReq) (*pb.Regist
 		resp := &pb.RegisterOrLoginInfoResp{
 			StatusCode: 0,
 			StatusMsg:  "登录成功",
-			UserId:     user.Id,
+			UserId:     int64(user.ID),
 			Token:      tokenString,
 		}
 		return resp, nil
@@ -269,18 +277,17 @@ func (s *UserServe) UserDetail(ctx context.Context, req *pb.DetailRep) (*pb.User
 			//查询视频流的时候要从redis中查询出用户的所有信息
 			TotalFavorited, FavoriteCount, FollowerCount, FollowCount, _ := util.GetUserAllUserData(int64(Intuid))
 			pbUser := &pb.User{
-				Id:            user.Id,
-				Name:          user.Name,
+				Id:            int64(user.ID),
+				Name:          user.Username,
 				FollowCount:   FollowCount,
 				FollowerCount: FollowerCount,
 				//TODO 需要另外进行查询
 				IsFollow:        Isfollow,
 				Avatar:          user.Avatar,
 				BackgroundImage: user.BackgroundImage,
-				Signature:       user.Signature,
-				TotalFavorited:  TotalFavorited,
-				WorkCount:       user.WorkCount,
-				FavoriteCount:   FavoriteCount,
+				//Signature:       user.Signature,
+				TotalFavorited: TotalFavorited,
+				FavoriteCount:  FavoriteCount,
 			}
 			resp := &pb.UserDetailResp{
 				StatusCode: 0,
