@@ -1,14 +1,14 @@
 package handler
 
 import (
+	"arrayDanceBackEnddouyin-api/globalinit/constant"
+	pb "arrayDanceBackEnddouyin-api/proto/user"
+	"arrayDanceBackEnddouyin-api/util"
+	"arrayDanceBackEndinteraction-service/dao"
+	"arrayDanceBackEndinteraction-service/global"
+	"arrayDanceBackEndinteraction-service/model"
+	"arrayDanceBackEndinteraction-service/proto/comment"
 	"context"
-	"demotest/douyin-api/globalinit/constant"
-	pb "demotest/douyin-api/proto/user"
-	"demotest/douyin-api/util"
-	"demotest/interaction-service/dao"
-	"demotest/interaction-service/global"
-	"demotest/interaction-service/model"
-	"demotest/interaction-service/proto/comment"
 	"fmt"
 	"go.uber.org/zap"
 	"google.golang.org/grpc"

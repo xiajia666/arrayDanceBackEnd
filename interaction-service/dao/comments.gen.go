@@ -16,7 +16,7 @@ import (
 
 	"gorm.io/plugin/dbresolver"
 
-	"demotest/interaction-service/model"
+	"arrayDanceBackEndinteraction-service/model"
 )
 
 func newComment(db *gorm.DB, opts ...gen.DOOption) comment {

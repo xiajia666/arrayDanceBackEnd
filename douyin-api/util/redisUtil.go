@@ -1,9 +1,9 @@
 package util
 
 import (
-	"demotest/douyin-api/global"
-	"demotest/douyin-api/globalinit/constant"
-	pb "demotest/douyin-api/proto/user"
+	"arrayDanceBackEnddouyin-api/global"
+	"arrayDanceBackEnddouyin-api/globalinit/constant"
+	pb "arrayDanceBackEnddouyin-api/proto/user"
 	"errors"
 	"fmt"
 	"strconv"

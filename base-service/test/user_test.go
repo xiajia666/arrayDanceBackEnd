@@ -1,9 +1,9 @@
 package test
 
 import (
+	"arrayDanceBackEndbase-service/global"
+	"arrayDanceBackEndbase-service/model"
 	"crypto/sha512"
-	"demotest/base-service/global"
-	"demotest/base-service/model"
 	"fmt"
 	"github.com/anaskhan96/go-password-encoder"
 	"github.com/dgrijalva/jwt-go"

@@ -1,9 +1,9 @@
 package api
 
 import (
+	"arrayDanceBackEnddouyin-api/global"
+	vpb "arrayDanceBackEnddouyin-api/proto/video"
 	"context"
-	"demotest/douyin-api/global"
-	vpb "demotest/douyin-api/proto/video"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/qiniu/go-sdk/v7/auth/qbox"
