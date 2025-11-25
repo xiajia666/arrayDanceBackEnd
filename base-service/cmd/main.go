@@ -1,9 +1,9 @@
 package main
 
 import (
-	"arrayDanceBackEndbase-service/handler"
-	pb "arrayDanceBackEndbase-service/proto"
-	vpb "arrayDanceBackEndbase-service/videoproto"
+	"arrayDanceBackEnd/base-service/handler"
+	pb "arrayDanceBackEnd/base-service/proto"
+	vpb "arrayDanceBackEnd/base-service/videoproto"
 	"flag"
 	"fmt"
 	"net"

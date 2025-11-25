@@ -1,7 +1,7 @@
 package api
 
 import (
-	"arrayDanceBackEnddouyin-api/proto/user"
+	"arrayDanceBackEnd/douyin-api/proto/user"
 	"context"
 	"go.uber.org/zap"
 	"net/http"

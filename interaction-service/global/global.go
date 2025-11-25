@@ -1,7 +1,7 @@
 package global
 
 import (
-	"arrayDanceBackEnddouyin-api/globalinit/constant"
+	"arrayDanceBackEnd/douyin-api/globalinit/constant"
 	"github.com/go-redis/redis"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"

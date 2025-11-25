@@ -1,9 +1,9 @@
 package handler
 
 import (
-	"arrayDanceBackEndinteraction-service/dao"
-	"arrayDanceBackEndinteraction-service/global"
-	"arrayDanceBackEndinteraction-service/proto/comment"
+	"arrayDanceBackEnd/interaction-service/dao"
+	"arrayDanceBackEnd/interaction-service/global"
+	"arrayDanceBackEnd/interaction-service/proto/comment"
 	"context"
 	"google.golang.org/protobuf/proto"
 	"reflect"

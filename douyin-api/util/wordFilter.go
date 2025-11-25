@@ -1,7 +1,7 @@
 package util
 
 import (
-	"arrayDanceBackEnddouyin-api/globalinit/constant"
+	"arrayDanceBackEnd/douyin-api/globalinit/constant"
 	"bufio"
 	"github.com/mozillazg/go-pinyin"
 	"go.uber.org/zap"

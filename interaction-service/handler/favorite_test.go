@@ -1,12 +1,12 @@
 package handler
 
 import (
-	"arrayDanceBackEnddouyin-api/globalinit/constant"
-	vp "arrayDanceBackEnddouyin-api/proto/video"
-	"arrayDanceBackEndinteraction-service/dao"
-	"arrayDanceBackEndinteraction-service/global"
-	"arrayDanceBackEndinteraction-service/model"
-	"arrayDanceBackEndinteraction-service/proto/favorite"
+	"arrayDanceBackEnd/douyin-api/globalinit/constant"
+	vp "arrayDanceBackEnd/douyin-api/proto/video"
+	"arrayDanceBackEnd/interaction-service/dao"
+	"arrayDanceBackEnd/interaction-service/global"
+	"arrayDanceBackEnd/interaction-service/model"
+	"arrayDanceBackEnd/interaction-service/proto/favorite"
 	"context"
 	"google.golang.org/protobuf/proto"
 

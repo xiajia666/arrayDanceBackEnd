@@ -1,8 +1,8 @@
 package util
 
 import (
-	"arrayDanceBackEndbase-service/global"
-	pb "arrayDanceBackEndbase-service/proto"
+	"arrayDanceBackEnd/base-service/global"
+	pb "arrayDanceBackEnd/base-service/proto"
 	"errors"
 	"fmt"
 	"github.com/go-redis/redis"

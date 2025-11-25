@@ -1,7 +1,7 @@
 package api
 
 import (
-	mpb "arrayDanceBackEnddouyin-api/proto/message"
+	mpb "arrayDanceBackEnd/douyin-api/proto/message"
 	"context"
 	"fmt"
 	"github.com/gin-gonic/gin"

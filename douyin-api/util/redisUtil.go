@@ -1,9 +1,9 @@
 package util
 
 import (
-	"arrayDanceBackEnddouyin-api/global"
-	"arrayDanceBackEnddouyin-api/globalinit/constant"
-	pb "arrayDanceBackEnddouyin-api/proto/user"
+	"arrayDanceBackEnd/douyin-api/global"
+	"arrayDanceBackEnd/douyin-api/globalinit/constant"
+	pb "arrayDanceBackEnd/douyin-api/proto/user"
 	"errors"
 	"fmt"
 	"strconv"

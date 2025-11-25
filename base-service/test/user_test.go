@@ -1,12 +1,12 @@
 package test
 
 import (
-	"arrayDanceBackEndbase-service/global"
-	"arrayDanceBackEndbase-service/model"
+	"arrayDanceBackEnd/base-service/global"
+	"arrayDanceBackEnd/base-service/model"
 	"crypto/sha512"
 	"fmt"
-	"github.com/anaskhan96/go-password-encoder"
 	"github.com/dgrijalva/jwt-go"
+	"golang.org/x/crypto/bcrypt"
 	"gorm.io/gorm"
 	"strconv"
 	"strings"

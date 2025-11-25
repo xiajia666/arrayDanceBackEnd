@@ -1,8 +1,8 @@
 package router
 
 import (
-	"arrayDanceBackEnddouyin-api/api"
-	"arrayDanceBackEnddouyin-api/util"
+	"arrayDanceBackEnd/douyin-api/api"
+	"arrayDanceBackEnd/douyin-api/util"
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
 )

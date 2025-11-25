@@ -1,10 +1,10 @@
 package handler
 
 import (
-	"arrayDanceBackEndbase-service/global"
-	"arrayDanceBackEndbase-service/model"
-	pb "arrayDanceBackEndbase-service/proto"
-	"arrayDanceBackEndbase-service/util"
+	"arrayDanceBackEnd/base-service/global"
+	"arrayDanceBackEnd/base-service/model"
+	pb "arrayDanceBackEnd/base-service/proto"
+	"arrayDanceBackEnd/base-service/util"
 	"context"
 	"crypto/md5"
 	"crypto/sha512"

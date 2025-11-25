@@ -1,7 +1,7 @@
 package api
 
 import (
-	rpb "arrayDanceBackEnddouyin-api/proto/relation"
+	rpb "arrayDanceBackEnd/douyin-api/proto/relation"
 	"context"
 	"fmt"
 	"github.com/gin-gonic/gin"

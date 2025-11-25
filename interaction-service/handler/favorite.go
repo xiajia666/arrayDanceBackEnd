@@ -1,13 +1,13 @@
 package handler
 
 import (
-	"arrayDanceBackEnddouyin-api/globalinit/constant"
-	vp "arrayDanceBackEnddouyin-api/proto/video"
-	"arrayDanceBackEnddouyin-api/util"
-	"arrayDanceBackEndinteraction-service/dao"
-	"arrayDanceBackEndinteraction-service/global"
-	"arrayDanceBackEndinteraction-service/model"
-	"arrayDanceBackEndinteraction-service/proto/favorite"
+	"arrayDanceBackEnd/douyin-api/globalinit/constant"
+	vp "arrayDanceBackEnd/douyin-api/proto/video"
+	"arrayDanceBackEnd/douyin-api/util"
+	"arrayDanceBackEnd/interaction-service/dao"
+	"arrayDanceBackEnd/interaction-service/global"
+	"arrayDanceBackEnd/interaction-service/model"
+	"arrayDanceBackEnd/interaction-service/proto/favorite"
 	"context"
 	"errors"
 	"fmt"

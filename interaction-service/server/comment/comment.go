@@ -1,14 +1,14 @@
 package main
 
 import (
-	"arrayDanceBackEnddouyin-api/globalinit/constant"
-	"arrayDanceBackEndinteraction-service/dao"
-	"arrayDanceBackEndinteraction-service/global"
+	"arrayDanceBackEnd/douyin-api/globalinit/constant"
+	"arrayDanceBackEnd/interaction-service/dao"
+	"arrayDanceBackEnd/interaction-service/global"
 	"go.uber.org/zap"
 	"google.golang.org/grpc"
 
-	"arrayDanceBackEndinteraction-service/handler"
-	"arrayDanceBackEndinteraction-service/proto/comment"
+	"arrayDanceBackEnd/interaction-service/handler"
+	"arrayDanceBackEnd/interaction-service/proto/comment"
 	"net"
 )
 

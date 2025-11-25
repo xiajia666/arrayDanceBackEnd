@@ -1,8 +1,8 @@
 package api
 
 import (
-	"arrayDanceBackEnddouyin-api/global"
-	vpb "arrayDanceBackEnddouyin-api/proto/video"
+	"arrayDanceBackEnd/douyin-api/global"
+	vpb "arrayDanceBackEnd/douyin-api/proto/video"
 	"context"
 	"fmt"
 	"github.com/gin-gonic/gin"

@@ -1,9 +1,9 @@
 package main
 
 import (
-	"arrayDanceBackEndsocial-service/handler"
-	mpb "arrayDanceBackEndsocial-service/proto/message"
-	vpb "arrayDanceBackEndsocial-service/proto/relation"
+	"arrayDanceBackEnd/social-service/handler"
+	mpb "arrayDanceBackEnd/social-service/proto/message"
+	vpb "arrayDanceBackEnd/social-service/proto/relation"
 	"flag"
 	"fmt"
 	"google.golang.org/grpc/keepalive"

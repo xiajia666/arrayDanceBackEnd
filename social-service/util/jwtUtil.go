@@ -3,7 +3,7 @@
 package util
 
 import (
-	"arrayDanceBackEndsocial-service/global"
+	"arrayDanceBackEnd/social-service/global"
 	"github.com/dgrijalva/jwt-go"
 
 	"time"

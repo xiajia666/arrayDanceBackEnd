@@ -1,13 +1,13 @@
 package handler
 
 import (
-	"arrayDanceBackEnddouyin-api/globalinit/constant"
-	pb "arrayDanceBackEnddouyin-api/proto/user"
-	"arrayDanceBackEnddouyin-api/util"
-	"arrayDanceBackEndinteraction-service/dao"
-	"arrayDanceBackEndinteraction-service/global"
-	"arrayDanceBackEndinteraction-service/model"
-	"arrayDanceBackEndinteraction-service/proto/comment"
+	"arrayDanceBackEnd/douyin-api/globalinit/constant"
+	pb "arrayDanceBackEnd/douyin-api/proto/user"
+	"arrayDanceBackEnd/douyin-api/util"
+	"arrayDanceBackEnd/interaction-service/dao"
+	"arrayDanceBackEnd/interaction-service/global"
+	"arrayDanceBackEnd/interaction-service/model"
+	"arrayDanceBackEnd/interaction-service/proto/comment"
 	"context"
 	"fmt"
 	"go.uber.org/zap"

@@ -1,9 +1,9 @@
 package api
 
 import (
-	"arrayDanceBackEnddouyin-api/global"
-	"arrayDanceBackEnddouyin-api/globalinit/constant"
-	"arrayDanceBackEnddouyin-api/proto/comment"
+	"arrayDanceBackEnd/douyin-api/global"
+	"arrayDanceBackEnd/douyin-api/globalinit/constant"
+	"arrayDanceBackEnd/douyin-api/proto/comment"
 	"fmt"
 	"net/http"
 	"strconv"

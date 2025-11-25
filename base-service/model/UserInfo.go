@@ -12,17 +12,21 @@ type Video struct {
 	CreatedTime   time.Time
 }
 type User struct {
-	Id              int64
-	Name            string
-	FollowCount     int64
-	FollowerCount   int64
-	Avatar          string
-	BackgroundImage string
-	Signature       string
-	TotalFavorited  int64
-	WorkCount       int64
-	FavoriteCount   int64
-	Password        string
+	ID        uint64  `gorm:"primaryKey;autoIncrement;comment:主键"`
+	UID       string  `gorm:"type:varchar(20);uniqueIndex;comment:对外UID"`
+	Username  string  `gorm:"type:varchar(30);uniqueIndex;comment:登录名"`
+	Password  string  `gorm:"type:varchar(95);comment:bcrypt哈希"`
+	Email     string  `gorm:"type:varchar(100);uniqueIndex;comment:邮箱"`
+	Phone     *string `gorm:"type:varchar(20);uniqueIndex;comment:手机"`
+	Nickname  string  `gorm:"type:varchar(50);comment:昵称"`
+	Avatar    string  `gorm:"type:varchar(255);default:/static/avatar/default.png;comment:头像"`
+	Role      string  `gorm:"type:varchar(20);default:reader;comment:角色"`
+	State     uint8   `gorm:"type:tinyint;default:1;index;comment:状态 1正常 2禁用 3封禁"`
+	DeletedAt uint8   `gorm:"softDelete:flag;comment:软删除"` // 1=已删 0=未删
+	CreatedAt int64   `gorm:"autoCreateTime;comment:创建时间"`
+	UpdatedAt int64   `gorm:"autoUpdateTime;comment:更新时间"`
+	LastIP    string  `gorm:"type:varchar(45);comment:最后登录IP"`
+	LastAt    *int64  `gorm:"comment:最后登录时间"`
 }
 
 // 注册时候返回的数据
