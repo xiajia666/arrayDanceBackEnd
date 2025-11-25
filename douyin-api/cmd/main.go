@@ -1,7 +1,7 @@
 package main
 
 import (
-	"demotest/douyin-api/globalinit"
+	"arrayDanceBackEnddouyin-api/globalinit"
 	"fmt"
 	"go.uber.org/zap"
 	"net/http"

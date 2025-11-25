@@ -1,8 +1,8 @@
 package util
 
 import (
-	"demotest/douyin-api/global"
-	"demotest/douyin-api/globalinit/constant"
+	"arrayDanceBackEnddouyin-api/global"
+	"arrayDanceBackEnddouyin-api/globalinit/constant"
 	"errors"
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"

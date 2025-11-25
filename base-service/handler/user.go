@@ -1,13 +1,13 @@
 package handler
 
 import (
+	"arrayDanceBackEndbase-service/global"
+	"arrayDanceBackEndbase-service/model"
+	pb "arrayDanceBackEndbase-service/proto"
+	"arrayDanceBackEndbase-service/util"
 	"context"
 	"crypto/md5"
 	"crypto/sha512"
-	"demotest/base-service/global"
-	"demotest/base-service/model"
-	pb "demotest/base-service/proto"
-	"demotest/base-service/util"
 	"encoding/hex"
 	"fmt"
 	"github.com/dgrijalva/jwt-go"

@@ -1,9 +1,9 @@
 package api
 
 import (
-	"demotest/douyin-api/global"
-	"demotest/douyin-api/globalinit/constant"
-	"demotest/douyin-api/proto/favorite"
+	"arrayDanceBackEnddouyin-api/global"
+	"arrayDanceBackEnddouyin-api/globalinit/constant"
+	"arrayDanceBackEnddouyin-api/proto/favorite"
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
 	"google.golang.org/grpc"

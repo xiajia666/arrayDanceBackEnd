@@ -1,7 +1,7 @@
 package globalinit
 
 import (
-	"demotest/douyin-api/router"
+	"arrayDanceBackEnddouyin-api/router"
 	"github.com/gin-gonic/gin"
 )
 
