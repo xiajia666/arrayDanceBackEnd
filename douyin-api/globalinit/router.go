@@ -14,5 +14,6 @@ func Routers() *gin.Engine {
 	router.InitFavoriteRouter(ApiGroup)
 	router.InitCommentRouter(ApiGroup)
 	router.InitUserRouter(ApiGroup)
+	router.InitBlogRouter(ApiGroup) // 添加博客路由
 	return Router
 }

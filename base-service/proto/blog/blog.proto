@@ -1,0 +1,159 @@
+syntax = "proto3";
+
+package blog;
+
+option go_package = "demotest/base-service/proto/blog";
+
+// 博客文章
+message BlogInfo {
+    int64 blog_id = 1; // 博客ID
+    int64 user_id = 2; // 作者ID
+    string title = 3; // 标题
+    string content = 4; // 内容
+    string excerpt = 5; // 摘要
+    int64 views = 6; // 阅读量
+    int64 like_count = 7; // 点赞数
+    int64 comment_count = 8; // 评论数
+    string tag = 9; // 标签
+    bool is_published = 10; // 是否发布
+    int64 category_id = 11; // 分类ID
+    string category_name = 12; // 分类名称
+    string author_name = 13; // 作者名称
+    string author_avatar = 14; // 作者头像
+    string create_time = 15; // 创建时间
+    string update_time = 16; // 更新时间
+    bool is_recommended = 17; // 是否推荐
+}
+
+// 用户信息
+message UserInfo {
+    int64 user_id = 1; // 用户ID
+    string name = 2; // 用户名
+    string avatar = 3; // 头像
+}
+
+// 发布博客请求
+message PublishBlogRequest {
+    int64 user_id = 1; // 用户ID
+    string title = 2; // 标题
+    string content = 3; // 内容
+    string tag = 4; // 标签
+    int64 category_id = 5; // 分类ID
+    string excerpt = 6; // 摘要
+}
+
+// 发布博客响应
+message PublishBlogResponse {
+    int64 status_code = 1; // 状态码
+    string status_msg = 2; // 状态信息
+    int64 blog_id = 3; // 博客ID
+}
+
+// 获取博客列表请求
+message BlogListRequest {
+    int64 user_id = 1; // 用户ID(可选,获取特定用户的文章)
+    int64 category_id = 2; // 分类ID(可选)
+    int64 tag_id = 3; // 标签ID(可选)
+    string keyword = 4; // 搜索关键词(可选)
+    int32 page = 5; // 页码
+    int32 page_size = 6; // 每页数量
+    int64 latest_time = 7; // 最新时间(用于分页)
+}
+
+// 获取博客列表响应
+message BlogListResponse {
+    int64 status_code = 1; // 状态码
+    string status_msg = 2; // 状态信息
+    repeated BlogInfo blog_list = 3; // 博客列表
+    int64 total_count = 4; // 总数量
+    int64 latest_time = 5; // 最新时间
+}
+
+// 获取博客详情请求
+message BlogDetailRequest {
+    int64 blog_id = 1; // 博客ID
+    int64 user_id = 2; // 当前用户ID(可选,用于判断是否点赞等)
+}
+
+// 获取博客详情响应
+message BlogDetailResponse {
+    int64 status_code = 1; // 状态码
+    string status_msg = 2; // 状态信息
+    BlogInfo blog_info = 3; // 博客详情
+}
+
+// 删除博客请求
+message DeleteBlogRequest {
+    int64 user_id = 1; // 用户ID
+    int64 blog_id = 2; // 博客ID
+}
+
+// 删除博客响应
+message DeleteBlogResponse {
+    int64 status_code = 1; // 状态码
+    string status_msg = 2; // 状态信息
+}
+
+// 更新博客请求
+message UpdateBlogRequest {
+    int64 user_id = 1; // 用户ID
+    int64 blog_id = 2; // 博客ID
+    string title = 3; // 标题
+    string content = 4; // 内容
+    string tag = 5; // 标签
+    int64 category_id = 6; // 分类ID
+    string excerpt = 7; // 摘要
+}
+
+// 更新博客响应
+message UpdateBlogResponse {
+    int64 status_code = 1; // 状态码
+    string status_msg = 2; // 状态信息
+}
+
+// 获取分类列表响应
+message CategoryListResponse {
+    int64 status_code = 1; // 状态码
+    string status_msg = 2; // 状态信息
+    repeated CategoryInfo category_list = 3; // 分类列表
+}
+
+// 分类信息
+message CategoryInfo {
+    int64 category_id = 1; // 分类ID
+    string name = 2; // 分类名称
+    int64 article_count = 3; // 文章数量
+    int64 display_order = 4; // 显示顺序
+}
+
+// 获取标签列表响应
+message TagListResponse {
+    int64 status_code = 1; // 状态码
+    string status_msg = 2; // 状态信息
+    repeated TagInfo tag_list = 3; // 标签列表
+}
+
+// 标签信息
+message TagInfo {
+    int64 tag_id = 1; // 标签ID
+    string name = 2; // 标签名称
+    int64 article_count = 3; // 文章数量
+}
+
+// 博客服务
+service BlogService {
+    // 发布博客
+    rpc PublishBlog(PublishBlogRequest) returns (PublishBlogResponse);
+    // 获取博客列表
+    rpc GetBlogList(BlogListRequest) returns (BlogListResponse);
+    // 获取博客详情
+    rpc GetBlogDetail(BlogDetailRequest) returns (BlogDetailResponse);
+    // 删除博客
+    rpc DeleteBlog(DeleteBlogRequest) returns (DeleteBlogResponse);
+    // 更新博客
+    rpc UpdateBlog(UpdateBlogRequest) returns (UpdateBlogResponse);
+    // 获取分类列表
+    rpc GetCategoryList(BlogListRequest) returns (CategoryListResponse);
+    // 获取标签列表
+    rpc GetTagList(BlogListRequest) returns (TagListResponse);
+}

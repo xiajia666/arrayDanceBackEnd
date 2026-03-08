@@ -1,0 +1,11 @@
+// 完整的proto文件,包含所有message和service定义
+syntax = "proto3";
+
+package blog;
+
+option go_package = "demotest/base-service/proto/blog";
+
+// ... (省略,使用之前创建的blog.proto内容)
+
+// 注意: 实际使用时需要使用protoc编译:
+// protoc --go_out=. --go-grpc_out=. blog.proto
