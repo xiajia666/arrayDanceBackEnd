@@ -1,12 +1,12 @@
 package handler
 
 import (
+	"arrayDanceBackEndsocial-service/global"
+	"arrayDanceBackEndsocial-service/util"
 	"context"
-	"demotest/social-service/global"
-	"demotest/social-service/util"
 	"strconv"
 
-	"demotest/social-service/proto/relation"
+	"arrayDanceBackEndsocial-service/proto/relation"
 	"fmt"
 )
 

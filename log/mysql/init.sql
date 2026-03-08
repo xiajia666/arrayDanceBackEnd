@@ -1,0 +1,1 @@
+docker run -d <br> --name mysql8 <br> --restart=unless-stopped <br> -e MYSQL_ROOT_PASSWORD=985211 <br> -e MYSQL_DATABASE=appdb <br> -e MYSQL_USER=appuser <br> -e MYSQL_PASSWORD=apppass <br> -p 3306:3306 <br> -v mysql8_data:/var/lib/mysql <br> -v /etc/localtime:/etc/localtime:ro <br> mysql:8.0 <br> --character-set-server=utf8mb4 <br> --collation-server=utf8mb4_unicode_ci

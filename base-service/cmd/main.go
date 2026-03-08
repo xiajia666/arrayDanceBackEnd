@@ -1,9 +1,9 @@
 package main
 
 import (
-	"demotest/base-service/handler"
-	pb "demotest/base-service/proto"
-	vpb "demotest/base-service/videoproto"
+	"arrayDanceBackEndbase-service/handler"
+	pb "arrayDanceBackEndbase-service/proto"
+	vpb "arrayDanceBackEndbase-service/videoproto"
 	"flag"
 	"fmt"
 	"net"

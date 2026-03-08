@@ -1,11 +1,11 @@
 package main
 
 import (
-	"demotest/douyin-api/globalinit/constant"
-	"demotest/interaction-service/dao"
-	"demotest/interaction-service/global"
-	"demotest/interaction-service/handler"
-	"demotest/interaction-service/proto/favorite"
+	"arrayDanceBackEnddouyin-api/globalinit/constant"
+	"arrayDanceBackEndinteraction-service/dao"
+	"arrayDanceBackEndinteraction-service/global"
+	"arrayDanceBackEndinteraction-service/handler"
+	"arrayDanceBackEndinteraction-service/proto/favorite"
 	"go.uber.org/zap"
 	"google.golang.org/grpc"
 	"net"

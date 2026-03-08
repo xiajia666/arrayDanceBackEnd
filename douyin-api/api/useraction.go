@@ -1,8 +1,8 @@
 package api
 
 import (
+	rpb "arrayDanceBackEnddouyin-api/proto/relation"
 	"context"
-	rpb "demotest/douyin-api/proto/relation"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"

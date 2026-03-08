@@ -16,7 +16,7 @@ import (
 
 	"gorm.io/plugin/dbresolver"
 
-	"demotest/interaction-service/model"
+	"arrayDanceBackEndinteraction-service/model"
 )
 
 func newFavorite(db *gorm.DB, opts ...gen.DOOption) favorite {

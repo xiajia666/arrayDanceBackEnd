@@ -1,9 +1,9 @@
 package handler
 
 import (
+	"arrayDanceBackEndsocial-service/global"
+	mpb "arrayDanceBackEndsocial-service/proto/message"
 	"context"
-	"demotest/social-service/global"
-	mpb "demotest/social-service/proto/message"
 	"strconv"
 	"time"
 )

@@ -1,9 +1,9 @@
 package main
 
 import (
-	"demotest/social-service/handler"
-	mpb "demotest/social-service/proto/message"
-	vpb "demotest/social-service/proto/relation"
+	"arrayDanceBackEndsocial-service/handler"
+	mpb "arrayDanceBackEndsocial-service/proto/message"
+	vpb "arrayDanceBackEndsocial-service/proto/relation"
 	"flag"
 	"fmt"
 	"google.golang.org/grpc/keepalive"

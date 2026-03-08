@@ -1,8 +1,8 @@
 package api
 
 import (
+	mpb "arrayDanceBackEnddouyin-api/proto/message"
 	"context"
-	mpb "demotest/douyin-api/proto/message"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"

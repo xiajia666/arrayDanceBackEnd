@@ -8,24 +8,24 @@
  - using code:	gin.SetMode(gin.ReleaseMode)
 
 2025-05-20T22:52:22.992+0800	INFO	router/favorite.go:12	配置点赞相关的url
-[GIN-debug] POST   /douyin/favorite/action/  --> demotest/douyin-api/api.FavoriteAction (4 handlers)
-[GIN-debug] GET    /douyin/favorite/list/    --> demotest/douyin-api/api.FavoriteList (4 handlers)
+[GIN-debug] POST   /douyin/favorite/action/  --> arrayDanceBackEnddouyin-api/api.FavoriteAction (4 handlers)
+[GIN-debug] GET    /douyin/favorite/list/    --> arrayDanceBackEnddouyin-api/api.FavoriteList (4 handlers)
 2025-05-20T22:52:22.993+0800	INFO	router/comment.go:12	配置评论相关的url
-[GIN-debug] POST   /douyin/comment/action/   --> demotest/douyin-api/api.CommentAction (4 handlers)
-[GIN-debug] GET    /douyin/comment/list/     --> demotest/douyin-api/api.CommentList (3 handlers)
+[GIN-debug] POST   /douyin/comment/action/   --> arrayDanceBackEnddouyin-api/api.CommentAction (4 handlers)
+[GIN-debug] GET    /douyin/comment/list/     --> arrayDanceBackEnddouyin-api/api.CommentList (3 handlers)
 2025-05-20T22:52:22.993+0800	INFO	router/user.go:21	配置用户相关的url
-[GIN-debug] GET    /douyin/user/             --> demotest/douyin-api/api.GetUserDetail (3 handlers)
-[GIN-debug] POST   /douyin/user/register/    --> demotest/douyin-api/api.UserRegister (4 handlers)
-[GIN-debug] POST   /douyin/user/login/       --> demotest/douyin-api/api.UserLogin (3 handlers)
-[GIN-debug] POST   /douyin/publish/action/   --> demotest/douyin-api/api.VideoPublish (4 handlers)
-[GIN-debug] GET    /douyin/feed/             --> demotest/douyin-api/api.VideoStream (3 handlers)
-[GIN-debug] GET    /douyin/publish/list/     --> demotest/douyin-api/api.VideoList (3 handlers)
-[GIN-debug] POST   /douyin/relation/action/  --> demotest/douyin-api/api.UserRelationAction (3 handlers)
-[GIN-debug] GET    /douyin/relation/follow/list/ --> demotest/douyin-api/api.UserRelationFollowList (3 handlers)
-[GIN-debug] GET    /douyin/relation/follower/list/ --> demotest/douyin-api/api.UserRelationFollowerList (3 handlers)
-[GIN-debug] GET    /douyin/relation/friend/list/ --> demotest/douyin-api/api.UserRelationFriendList (3 handlers)
-[GIN-debug] POST   /douyin/message/action/   --> demotest/douyin-api/api.UserMessageAction (4 handlers)
-[GIN-debug] GET    /douyin/message/chat/     --> demotest/douyin-api/api.UserMessageChat (3 handlers)
+[GIN-debug] GET    /douyin/user/             --> arrayDanceBackEnddouyin-api/api.GetUserDetail (3 handlers)
+[GIN-debug] POST   /douyin/user/register/    --> arrayDanceBackEnddouyin-api/api.UserRegister (4 handlers)
+[GIN-debug] POST   /douyin/user/login/       --> arrayDanceBackEnddouyin-api/api.UserLogin (3 handlers)
+[GIN-debug] POST   /douyin/publish/action/   --> arrayDanceBackEnddouyin-api/api.VideoPublish (4 handlers)
+[GIN-debug] GET    /douyin/feed/             --> arrayDanceBackEnddouyin-api/api.VideoStream (3 handlers)
+[GIN-debug] GET    /douyin/publish/list/     --> arrayDanceBackEnddouyin-api/api.VideoList (3 handlers)
+[GIN-debug] POST   /douyin/relation/action/  --> arrayDanceBackEnddouyin-api/api.UserRelationAction (3 handlers)
+[GIN-debug] GET    /douyin/relation/follow/list/ --> arrayDanceBackEnddouyin-api/api.UserRelationFollowList (3 handlers)
+[GIN-debug] GET    /douyin/relation/follower/list/ --> arrayDanceBackEnddouyin-api/api.UserRelationFollowerList (3 handlers)
+[GIN-debug] GET    /douyin/relation/friend/list/ --> arrayDanceBackEnddouyin-api/api.UserRelationFriendList (3 handlers)
+[GIN-debug] POST   /douyin/message/action/   --> arrayDanceBackEnddouyin-api/api.UserMessageAction (4 handlers)
+[GIN-debug] GET    /douyin/message/chat/     --> arrayDanceBackEnddouyin-api/api.UserMessageChat (3 handlers)
 2025-05-20T22:52:22.994+0800	INFO	util/redisUtil.go:62	Redis初始化成功，定时任务开始执行
 2025-05-20T22:52:23.020+0800	INFO	util/wordFilter.go:171	无法加载敏感词文件:open /home/runner/app/pub_sms_banned_words.txt: no such file or directory
 2025-05-20T22:52:23.020+0800	INFO	cmd/main.go:34	启动服务器,端口: 8080

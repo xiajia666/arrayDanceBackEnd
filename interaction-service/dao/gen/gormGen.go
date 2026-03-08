@@ -1,7 +1,7 @@
 package main
 
 import (
-	"demotest/douyin-api/globalinit/constant"
+	"arrayDanceBackEnddouyin-api/globalinit/constant"
 	"fmt"
 	"gorm.io/driver/mysql"
 	"gorm.io/gen"

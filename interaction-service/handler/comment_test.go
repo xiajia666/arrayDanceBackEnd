@@ -1,10 +1,10 @@
 package handler
 
 import (
+	"arrayDanceBackEndinteraction-service/dao"
+	"arrayDanceBackEndinteraction-service/global"
+	"arrayDanceBackEndinteraction-service/proto/comment"
 	"context"
-	"demotest/interaction-service/dao"
-	"demotest/interaction-service/global"
-	"demotest/interaction-service/proto/comment"
 	"google.golang.org/protobuf/proto"
 	"reflect"
 	"testing"

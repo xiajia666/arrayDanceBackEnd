@@ -8,7 +8,7 @@ package comment
 
 import (
 	"context"
-	pb "demotest/douyin-api/proto/user"
+	pb "arrayDanceBackEnddouyin-api/proto/user"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"

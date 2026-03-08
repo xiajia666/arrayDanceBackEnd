@@ -1,9 +1,9 @@
 package api
 
 import (
-	"demotest/douyin-api/global"
-	"demotest/douyin-api/globalinit/constant"
-	"demotest/douyin-api/proto/comment"
+	"arrayDanceBackEnddouyin-api/global"
+	"arrayDanceBackEnddouyin-api/globalinit/constant"
+	"arrayDanceBackEnddouyin-api/proto/comment"
 	"fmt"
 	"net/http"
 	"strconv"

@@ -8,7 +8,7 @@ package favorite
 
 import (
 	"context"
-	pb "demotest/douyin-api/proto/video"
+	pb "arrayDanceBackEnddouyin-api/proto/video"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"

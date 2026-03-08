@@ -1,10 +1,10 @@
 package handler
 
 import (
+	"arrayDanceBackEnd/base-service/global"
+	"arrayDanceBackEnd/base-service/util"
+	vpb "arrayDanceBackEnd/base-service/videoproto"
 	"context"
-	"demotest/base-service/global"
-	"demotest/base-service/util"
-	vpb "demotest/base-service/videoproto"
 	"fmt"
 	"github.com/qiniu/go-sdk/v7/auth/qbox"
 	"github.com/qiniu/go-sdk/v7/storage"
