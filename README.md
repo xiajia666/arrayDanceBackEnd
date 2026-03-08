@@ -15,7 +15,7 @@
 
 ## 一、项目介绍 这里做的不对
 - 本抖音项目是基于grpc通讯协议开发的高性能微服务，不仅使用gin作为业务层框架，gorm框架作为持久层框架，还使用预编译sql防止sql注入，同时该项目结合连接池技术来构建连接工厂和复用grpc连接来提高系统的性能，这样可以有效的处理高并发场景下的挑战，还可以通过减少频繁创建和销毁grpc连接带来的性能开销
-- 项目服务地址:https://1024code.com/codecubes/jpyi9rm
+- 项目服务地址:https://1024code.com/codecubes/jpyi9rm 
 - 项目地址:https://github.com/fineCoderWithLove/douyin-base
 ## 二、项目实现--123
  ###  2.1技术选型
@@ -124,3 +124,25 @@
 查询评论是根据视频的id查询的，我们在comments表的video_id创建了idx_select_comment_list 索引。
 ### 字典树算法实现敏感词过滤
 在第七届，我们会使用机器学习训练模型来处理敏感词。
+
+## 📚 新增博客平台文档
+
+请查看以下文档了解博客平台:
+- [`README_NEW.md`](README_NEW.md) - 完整项目文档
+- [`QUICK_START.md`](QUICK_START.md) - 快速开始指南  
+- [`DEPLOYMENT_GUIDE.md`](DEPLOYMENT_GUIDE.md) - 部署指南
+- [`INDEX.md`](INDEX.md) - 项目索引
+
+## 🚀 博客平台核心特性
+
+- ✅ 博客文章完整生命周期管理(发布、查看、更新、删除)
+- ✅ 博客分类和标签管理系统
+- ✅ 阅读量统计(使用Redis缓存优化)
+- ✅ 支持软删除和推荐功能
+- ✅ 完全兼容抖音用户系统和认证机制
+- ✅ 7个RESTful API接口
+- ✅ 完善的文档和测试
+
+---
+
+**祝您使用愉快!** 🎉
